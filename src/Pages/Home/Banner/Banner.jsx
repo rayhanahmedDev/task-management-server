@@ -5,7 +5,7 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div>
-            <div className="hero lg:min-h-[640px] min-h-[400px] bg-base-200 bg-image">
+            <div className="hero lg:min-h-[740px] min-h-[400px] bg-base-200 bg-image">
                 <div className="hero-content text-center">
                     <div className="max-w-xl">
                         <h1 className="text-5xl font-bold text-[#050748] leading-tight">Simplify Your Life With Task <span className='text-[#E60072]'>Management</span></h1>
