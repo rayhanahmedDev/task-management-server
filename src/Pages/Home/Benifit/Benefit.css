@@ -1,0 +1,8 @@
+.bg-color{
+    background: linear-gradient(to bottom,#fffaf5 0,#f8ecff 100%);
+}
+
+.client-style{
+    border-radius: 8px;
+    box-shadow: -20px 20px 40px #ece0f2, 20px -20px 40px #fff8ff;
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "id" : 1,
+        "title": "Developers",
+        "description": "Efficiently manage coding tasks and project deadlines.",
+        "icon": "💻",
+        "color" : "#E9DDFF"
+    },
+    {
+        "id" : 2,
+        "title": "Corporate Professionals",
+        "description": "Organize meetings, projects, and tasks seamlessly.",
+        "icon": "👔",
+        "color" : "#FFDADB"
+    },
+    {
+        "id" : 3,
+        "title": "Bankers",
+        "description": "Keep track of financial tasks, deadlines, and priorities.",
+        "icon": "🏦",
+        "color" : "#FFEDE1"
+    }
+]
