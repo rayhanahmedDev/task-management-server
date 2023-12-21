@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div>
-            {/* footer start */}
-            <footer className="footer footer-center p-10 rounded bg-gradient-to-r from-[#D6FFFC] to-[#ffeff5] text-black">
+            {/* footer start  */}
+            <footer className="footer footer-center p-10 rounded bg-gradient-to-r from-[#ffeff5] to-[#D6FFFC] text-black">
                 <nav>
                     <div className="grid grid-flow-col gap-4">
                         <Link to={`https://www.facebook.com/profile.php?id=100014010706300`}>

@@ -10,7 +10,7 @@ const NavBer = () => {
 
     return (
         <div>
-            <div className="navbar fixed z-10 bg-opacity-30 shadow md:px-36 py-8">
+            <div className="navbar lg:fixed lg:z-10 lg:bg-opacity-30 shadow md:px-36 py-8">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost text-[#050748] lg:hidden">
