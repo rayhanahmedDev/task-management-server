@@ -52,8 +52,8 @@ const SignUp = () => {
             <div className='flex justify-center items-center min-h-screen'>
                 <div className='flex flex-col md:max-w-md w-full my-8 mx-6 p-6 rounded-md sm:p-10 bg-white border text-gray-900'>
                     <div className='mb-8 text-center'>
-                        <h1 className='my-3 text-4xl font-bold'>Sign Up</h1>
-                        <p className='text-sm text-gray-400'>
+                        <h1 className='my-3 text-[#050748] text-4xl font-bold'>Sign Up</h1>
+                        <p className='text-sm text-[#050748]'>
                             Sign up to access your account
                         </p>
                     </div>
@@ -63,7 +63,7 @@ const SignUp = () => {
                     >
                         <div className='space-y-2'>
                             <div>
-                                <label htmlFor='email' className='block mb-2 text-sm'>
+                                <label htmlFor='email' className='block text-[#050748] mb-2 text-sm'>
                                     Your Name
                                 </label>
                                 <input
@@ -77,7 +77,7 @@ const SignUp = () => {
                                 />
                             </div>
                             <div>
-                                <label htmlFor='email' className='block mb-2 text-sm'>
+                                <label htmlFor='email' className='block mb-2 text-sm text-[#050748]'>
                                     Email address
                                 </label>
                                 <input
@@ -93,7 +93,7 @@ const SignUp = () => {
                             </div>
                             <div>
                                 <div className='flex justify-between'>
-                                    <label htmlFor='password' className='text-sm mb-2'>
+                                    <label htmlFor='password' className='text-sm mb-2 text-[#050748]'>
                                         Password
                                     </label>
                                 </div>
@@ -126,7 +126,7 @@ const SignUp = () => {
                     </div>
                     <div className='flex items-center pt-4 space-x-1'>
                         <div className='flex-1 h-px sm:w-16 dark:bg-gray-700'></div>
-                        <p className='px-3 text-sm dark:text-gray-400'>
+                        <p className='px-3 text-sm text-[#050748]'>
                             Login with social accounts
                         </p>
                         <div className='flex-1 h-px sm:w-16 dark:bg-gray-700'></div>
