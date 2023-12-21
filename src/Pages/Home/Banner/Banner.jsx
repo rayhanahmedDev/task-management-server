@@ -1,13 +1,15 @@
 
+import './Banner.css'
+
 const Banner = () => {
     return (
         <div>
-            <div className="hero bg-base-200">
+            <div className="hero lg:min-h-[640px] min-h-[400px] bg-base-200 bg-image">
                 <div className="hero-content text-center">
-                    <div className="max-w-md">
-                        <h1 className="text-5xl font-bold">Hello there</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Get Started</button>
+                    <div className="max-w-xl">
+                        <h1 className="text-5xl font-bold text-[#050748] leading-tight">Simplify Your Life With Task <span className='text-[#E60072]'>Management</span></h1>
+                        <p className="py-6">Automate Your Daily Tasks. Focus One Things That Really Matter</p>
+                        <button className="btn bg-gradient-to-r from-[#ffbd84] to-[#ff1f8e] text-white">Let’s Explore</button>
                     </div>
                 </div>
             </div>
