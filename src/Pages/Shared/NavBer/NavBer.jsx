@@ -1,14 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 
 
 const NavBer = () => {
 
     const { user, logOut } = useAuth()
+    const navigate = useNavigate()
 
     const handleLogOut = () => {
         logOut()
-            .then()
+            .then(navigate('/'))
             .catch()
     }
 
