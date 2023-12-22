@@ -1,12 +1,23 @@
 import { useForm } from "react-hook-form";
 import useAxios from "../../../Hooks/useAxios";
 import Swal from "sweetalert2";
+import { useQuery } from "@tanstack/react-query";
 
 
 const CreateTask = () => {
 
     const axiosPublic = useAxios()
 
+    // get the data
+    const { data: tasks = [],} = useQuery({
+        queryKey: ['tasks'],
+        queryFn: async () => {
+            const res = await axiosPublic.get(`http://localhost:5000/task`)
+            return res.data
+        }
+    })
+
+    // post data from database
     const {
         register,
         handleSubmit,
@@ -15,10 +26,10 @@ const CreateTask = () => {
     const onSubmit = async (data) => {
         console.log(data);
         const priorityItem = {
-            name : data.title,
-            date : data.date,
-            priority : data.priority,
-            descriptions : data.descriptions,
+            name: data.title,
+            date: data.date,
+            priority: data.priority,
+            descriptions: data.descriptions,
         }
         const res = await axiosPublic.post('/task', priorityItem)
         console.log(res);
@@ -28,7 +39,7 @@ const CreateTask = () => {
                 title: "Confirm your Task",
                 text: "You clicked the button!",
                 icon: "success",
-              });
+            });
         }
 
     }
@@ -126,6 +137,21 @@ const CreateTask = () => {
                             </div>
                         </dialog>
                         {/* modal section end */}
+                    </div>
+
+                    {/* todo data */}
+                    <div className="mt-8">
+                        {
+                            tasks.map(task => <div key={task._id} className="card bg-base-100 shadow-xl mt-4">
+                            <div className="card-body">
+                              <h2 className="card-title">Card title!</h2>
+                              <p>If a dog chews shoes whose shoes does he choose?</p>
+                              <div className="card-actions justify-end">
+                                <button className="btn btn-primary">Buy Now</button>
+                              </div>
+                            </div>
+                          </div>)
+                        }
                     </div>
                 </div>
                 {/* ongoing list */}
