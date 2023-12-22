@@ -9,6 +9,7 @@ import SignUp from "../Pages/SignUp/SignUp";
 import Dashboard from "../Layout/Dashboard";
 import PrivateRoute from "../Provider/PrivateRoute";
 import MyProfile from "../Pages/Dashboard/MyProfile/MyProfile";
+import CreateTask from "../Pages/Dashboard/CreateTask/CreateTask";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path : 'myProfile',
         element : <MyProfile></MyProfile>
+      },
+      {
+        path : 'createTask',
+        element : <CreateTask></CreateTask>
       }
     ]
   }

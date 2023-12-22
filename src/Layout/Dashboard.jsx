@@ -9,12 +9,12 @@ const Dashboard = () => {
     const { user } = useAuth()
     return (
         <div>
-            <div className="bg-gradient-to-r from-[#ffdee9] to-[#c8fff4] h-[100px]">
+            <div className="bg-gradient-to-r from-[#ffdee9] to-[#c8fff4] lg:h-[100px]">
             <NavBer></NavBer>
             </div>
-            <div className="lg:px-36">
-                <div className="grid grid-cols-1 lg:grid-cols-12 lg:pt-20 gap-5">
-                    <div className="lg:col-span-2 p-4 bg-[#ffe2e2] flex flex-col item-center h-full lg:h-[70vh]">
+            <div className="lg:pl-8 lg:pr-8 bg-[#FFFFFF]">
+                <div className="grid grid-cols-1 lg:grid-cols-12 pt-20 gap-5">
+                    <div className="lg:col-span-3 p-4 bg-[#ffe2e2] flex flex-col item-center h-full mx-4">
                         <ul className="menu">
                             {
                                 user ? (<>
@@ -25,7 +25,7 @@ const Dashboard = () => {
                                         <NavLink to='/dashboard/myProfile'><CgProfile></CgProfile> My Profile</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to='/dashboard/myTask'><FaBook></FaBook>My Task</NavLink>
+                                        <NavLink to='/dashboard/createTask'><FaBook></FaBook>Create Task</NavLink>
                                     </li>
                                 </>) : null
                             }
