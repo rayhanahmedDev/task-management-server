@@ -15,7 +15,7 @@ const NavBer = () => {
 
     const links = <>
         <li><NavLink className="mr-4 " to="/">Home</NavLink></li>
-        <li><NavLink className="mr-4" to='/dashboard'>Dashboard</NavLink></li>
+        <li><NavLink className="mr-4" to='/dashboard/myProfile'>Dashboard</NavLink></li>
         {user?.email ? <li><button className='mr-4' onClick={handleLogOut}>LogOut</button></li> : <li><NavLink className='mr-4' to='/login'>Login</NavLink></li>}
     </>
 

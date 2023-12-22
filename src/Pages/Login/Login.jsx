@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import NavBer from "../Shared/NavBer/NavBer";
 import { FcGoogle } from 'react-icons/fc'
 import { useForm } from "react-hook-form";
@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 const Login = () => {
 
     const { signIn, googleLogin } = useAuth()
+    const navigate = useNavigate()
 
     // login with email and password
     const {
@@ -24,6 +25,7 @@ const Login = () => {
                     text: "You clicked the button!",
                     icon: "success"
                 });
+                navigate('/dashboard')
             })
     }
 
@@ -37,6 +39,7 @@ const Login = () => {
                     text: "You clicked the button!",
                     icon: "success"
                 });
+                navigate('/dashboard')
             })
             .catch(error => {
                 console.log(error);
